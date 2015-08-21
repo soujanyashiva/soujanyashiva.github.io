@@ -130,6 +130,12 @@
           })])
           .range([0,svgHeight]);
 
+        var y1 = d3.scale.linear()
+          .domain([0, d3.max(barDataset, function(x) {
+              return x.y;
+          })])
+          .range([svgHeight,0]);
+
         var x = d3.scale.ordinal()
                   .domain(_.map(barDataset, function(d) { return d.x;}))
                   .rangeRoundBands([0, svgWidth], 0.10);
@@ -140,7 +146,7 @@
 
 
         var yAxis = d3.svg.axis()
-            .scale(y)
+            .scale(y1)
             .orient("left");
 
     
