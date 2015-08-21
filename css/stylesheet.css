@@ -1,0 +1,141 @@
+/*code for login page */
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+    }
+
+.form-login {
+    background-color: #EDEDED;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    border-color:#d2d2d2;
+    border-width: 5px;
+    box-shadow:0 1px 0 #cfcfcf;
+}
+
+/* code for header and footer begins */
+
+main {
+	height:auto;
+	width:auto;	
+}
+
+
+header{
+    height:4rem;
+    width :auto;
+    background-color: #383838 ;   
+    color:white;
+}
+
+footer{
+    height:4rem;
+    width :auto;
+    background-color: #A0A0A0 ;
+    line-height:4rem;
+    color:white;
+    font-size:1.25rem;
+}
+
+section#leftBar{
+	height:50rem;
+	width:15%;
+	background-color: teal;
+	float:left;
+	text-align:center;
+    color:white;
+    font-size:1.5rem;	
+}
+
+section#rightBar{
+	height:auto;
+	width:85%;	
+	float:left;
+	text-align: center;
+}
+
+/* code for piechart and bar graph begins */
+
+
+.barChart:hover{
+    fill :red;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";           /* css icon :triangle down */
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+div#charts{
+	background:#FFE0E0;
+}
+.footer{
+  width: 100%;
+  text-align: right;
+}
+.footer>p{
+  margin:0 0 0;
+  margin-right: 10%;
+  font-size:1.3em;
+}
+
+#login{
+  background-color: #008B8B;
+}
+
+#loginImag{
+border-radius: 50%;
+}
+
+#designation{
+  font-size: 14px;
+  color:#cccccc;
+}
+
+#logOut{
+  color:white;
+  float:right;
+  text-decoration: none;
+  line-height:4rem;
+}
+
+/* code for axis bar graph */
+.axis path,                                  
+    .axis line {
+        fill: none;
+        stroke: black;
+        shape-rendering: crispEdges;
+        stroke-width: 2;
+    }
+    .axis text {
+        font-family: sans-serif;
+        font-size: 12px;
+    }
